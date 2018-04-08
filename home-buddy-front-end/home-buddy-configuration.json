@@ -1,0 +1,412 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "home buddy",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "AskItemLocationIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "homeitem"
+                        }
+                    ],
+                    "samples": [
+                        "where  {item} is located",
+                        "tell me where {item} are located",
+                        "tell me where  my {item} is located",
+                        "tell me where  my {item} are located",
+                        "tell me where my {item} is",
+                        "tell me where my {item} are",
+                        "tell me where is {item}",
+                        "tell me where is my {item}",
+                        "tell me where are {item}",
+                        "tell me where are my {item}",
+                        "find {item}",
+                        "find my {item}",
+                        "locate {item}",
+                        "locate my {item}",
+                        "Where are  {item}",
+                        "Where is  {item}",
+                        "Where is my {item}",
+                        "Where are my {item}",
+                        "Where can I find my {item}",
+                        "Where can I find {item}",
+                        "Where are my {item} at",
+                        "I can't find my {item}",
+                        "I can't find {item}"
+                    ]
+                },
+                {
+                    "name": "StoreItemLocationIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "homeitem",
+                            "samples": [
+                                "{item}"
+                            ]
+                        },
+                        {
+                            "name": "location",
+                            "type": "homelocation",
+                            "samples": [
+                                "on {location}",
+                                "at {location}",
+                                "in {location}",
+                                "inside {location}",
+                                "at the {location} ",
+                                "on the {location}",
+                                "in the {location}",
+                                "{location}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Put {item} in {location}",
+                        "Put {item} at {location}",
+                        "I have put {item} at {location}",
+                        "I have put {item} in {location}",
+                        "my {item} is in {location}",
+                        "my {item} is at {location}"
+                    ]
+                },
+                {
+                    "name": "DeleteItemLocationIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "homeitem"
+                        }
+                    ],
+                    "samples": [
+                        "delete {item}"
+                    ]
+                },
+                {
+                    "name": "LocationSuggestionIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "homeitem"
+                        }
+                    ],
+                    "samples": [
+                        "Where should I put {item}",
+                        "Where should I put my {item}",
+                        "Can you suggest where can I put my {item}",
+                        "Can you suggest where can I put {item}",
+                        "Can you suggest where can I store {item}",
+                        "Can you suggest where can I store my {item}",
+                        "Can you suggest where can I keep {item}",
+                        "Can you suggest where can I keep my {item}",
+                        "Suggest me where should I put my {item}",
+                        "Suggest me where should I put {item}",
+                        "Suggest me a place to put my {item}",
+                        "Suggest me a place to put {item}",
+                        "Suggest me a place where I can put my {item}",
+                        "Suggest me a place where I can put {item}",
+                        "Suggest me a place to store my {item}",
+                        "Suggest me a place to store {item}",
+                        "Suggest me a place to keep my {item}",
+                        "Suggest me a place to keep {item}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "homeitem",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "container"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "salt"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pepper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "red pepper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "card"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "id card"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "credit card"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "debit card"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sun card"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "id"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "license"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "driving license"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "instructor permit"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SSN"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "laptop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mobile"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cell"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "iphone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tablet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pendrive"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lanyard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hardrive"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "belt"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "watch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "iwatch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "smart watch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pencil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eraser"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sugar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wallet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "keys"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "homelocation",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "fridge"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bed-room"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "table"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "car"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "shelf"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "closet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bathroom"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "desk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "drawer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kitchen"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "StoreItemLocationIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "homeitem",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.486005808352.933114447230"
+                            }
+                        },
+                        {
+                            "name": "location",
+                            "type": "homelocation",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.486005808352.771895868876"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.486005808352.933114447230",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please tell me which object"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.486005808352.771895868876",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Where again?"
+                    }
+                ]
+            }
+        ]
+    }
+}
