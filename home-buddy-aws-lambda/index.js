@@ -1,4 +1,4 @@
-/* eslint-disable  func-names */
+ /* eslint-disable  func-names */
 /* eslint quote-props: ["error", "consistent"]*/
 
 'use strict';
